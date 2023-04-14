@@ -9,9 +9,9 @@
 </head>
 <body>
     <?php include "posts.php"; ?>
-    <?php include "sidebar.php"; ?>
 </body>
 </html>
+
 
 
 

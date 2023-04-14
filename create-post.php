@@ -40,7 +40,6 @@
         <input type="submit" value="Create post">
     </form>
 
-    <?php include "footer.php";  ?>
     <?php include "posts.php"; ?>
 </body>
 </html>

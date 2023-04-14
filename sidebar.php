@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <div class="sidebar-contain">
@@ -29,7 +30,7 @@
 
         <aside class="blog-sidebar">
             <div class="sidebar-module">
-                <h1>The newest post</h1>
+                <h5>The newest post</h5>
                 <ul>
                     <?php foreach ($posts as $post) { ?>
                         <li><a href="http://localhost/vezba-zadnja/single-post.php?post_id=<?php echo $post["id"]; ?>"><?php echo $post["title"]; ?></a></li>

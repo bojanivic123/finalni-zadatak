@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <?php include "header.php"; ?>
@@ -35,7 +36,7 @@
 
            <article class="article-posts">
                <header>
-                   <h1><a href="single-post.php?post_id=<?php echo $post["id"]; ?>"><?php echo $post["title"]; ?></a></h1>
+                   <h1 class="posts"><a href="single-post.php?post_id=<?php echo $post["id"]; ?>"><?php echo $post["title"]; ?></a></h1>
                    <div class="more-data"><?php echo $post["created_at"]; ?> by <?php echo $post["author"]; ?></div>
                </header>
                    <p><?php echo $post["body"]; ?></p>
@@ -44,6 +45,8 @@
        <?php
            }
        ?>
+
+        <?php include "footer.php"; ?>
 </body>
 </html>
 

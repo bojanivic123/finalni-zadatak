@@ -38,7 +38,7 @@
     ?>
         <article class="single-article">
              <header>
-                <h1><?php echo $singlePost["title"]; ?></h1>
+                <h1 class="single-post"><?php echo $singlePost["title"]; ?></h1>
 
                 <div class="va-c-article__meta"><?php echo $singlePost["created_at"]; ?> by <?php echo $singlePost["author"]; ?></div>
             </header>
