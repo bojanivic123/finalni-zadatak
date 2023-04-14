@@ -1,17 +1,17 @@
-* {
-    box-sizing: border-box;
-    margin: 1px;
-    padding: 1px;
+@media (min-width: 60em) {
+    html {
+        font-size: 14px;
+    }
 }
 
-html {
-    font-size: 14px;
+body {
     font-family: sans-serif;
+    color: rgb(0, 133, 99);
 }
 
 div.blog-masthead {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 3rem;
+    text-align: center;
     background-color: rebeccapurple;
 }
 
@@ -25,7 +25,11 @@ h1.posts:hover {
 }
 
 footer.blog-footer {
-    display: flex;
-    justify-content: center;
+    padding: 3.5rem 0;
+    color: #999999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
 }
+
 
