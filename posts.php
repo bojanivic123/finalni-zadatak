@@ -19,7 +19,7 @@
 
         <?php
 
-            $sqlPosts = "SELECT posts.id, posts.author, posts.title, posts.body, posts.created_at FROM posts ORDER BY posts.created_at DESC";
+            $sqlPosts = "SELECT * FROM posts ORDER BY posts.created_at DESC";
             $statement = $connection->prepare($sqlPosts); 
             $statement->execute();
             $statement->setFetchMode(PDO::FETCH_ASSOC);
@@ -49,8 +49,6 @@
         <?php include "footer.php"; ?>
 </body>
 </html>
-
-
 
 
 

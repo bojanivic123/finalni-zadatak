@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sidebar</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 
         <?php
 
-            $sqlPosts = "SELECT posts.id, posts.author, posts.title, posts.body, posts.created_at FROM posts ORDER BY posts.created_at DESC LIMIT 1";
+            $sqlPosts = "SELECT * FROM posts ORDER BY posts.created_at DESC LIMIT 1";
             $statement = $connection->prepare($sqlPosts);
             $statement->execute();
             $statement->setFetchMode(PDO::FETCH_ASSOC);
